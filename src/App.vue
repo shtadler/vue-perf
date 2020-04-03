@@ -1,18 +1,19 @@
 <template>
   <div id="app">
+    <div class="navigation">
+      <router-link to="/" exact>Empty</router-link>
+      <router-link to="functional" exact>Functional</router-link>
+      <router-link to="local">Locale vars</router-link>
+      <router-link to="keep">Keep alive</router-link>
+    </div>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view class="route"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
@@ -24,5 +25,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation > * {
+  font-size: 24px;
+  color: black;
+  padding: 0 15px;
 }
 </style>
