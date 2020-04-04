@@ -1,6 +1,6 @@
-<template>
+<template functional>
     <div class="item">
-        <span v-if="active"></span>
+        <span v-if="props.active"></span>
         <i v-else></i>
     </div>
 </template>

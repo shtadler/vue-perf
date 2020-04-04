@@ -37,7 +37,7 @@ const router = new VueRouter({
 fps({
   position: 'top-right',
   style: `
-    font-size: 100px;
+    font-size: 80px;
   `,
 })
 

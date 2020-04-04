@@ -11,11 +11,14 @@ export default {
     base () {
       return 360
     },
+    // toooo much time to ex
     result () {
       let result = this.random * 100
+      const myBase = this.base;
+
     //   const base = this.base;
       for (let i = 0; i < 1000; i++) {
-        result += Math.sqrt(Math.cos(Math.sin(this.base))) + this.base * this.base + this.base + this.base * 2 + this.base * 3
+        result += Math.sqrt(Math.cos(Math.sin(myBase))) + myBase * myBase + myBase + myBase * 2 + myBase * 3
       }
       return result
     },
